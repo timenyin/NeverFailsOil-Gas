@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+    --mainDark: #000000;
+    --mainWhite: #FFFFFF;
+    --mainGreen: #369824;
+    --mainOrange: #D43E0D;
+    --mainYellow: #CDC42B;
+    --mainBlue: #2B6396;
+    --transition: all 0.3s linear;
+  }
+
+.text-heading_term {
+    padding-top: 20px;
+    padding-right: 0px;
+    font-size: 1rem !important;
+  }
+
+  .dropdown .trigger{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid  var(--mainOrange);
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+.dropdown .trigger::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0fe";
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    transform: rotate(0deg);
+    font-weight: 900;
+    transition: transform 0.3s;
+    top: 10px;
+    color: var(--mainOrange);
+    font-size: 25px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+.dropdown .trigger.active::after{
+    content: "\f056";
+    transform: rotate(360deg) scale(1.1, 1);
+    -webkit-transform: rotate(360deg) scale(1.1, 1);
+    -moz-transform: rotate(360deg) scale(1.1, 1);
+    -ms-transform: rotate(360deg) scale(1.1, 1);
+    -o-transform: rotate(360deg) scale(1.1, 1);
+}
+
+.dropdown .content {
+    display: none;
+}
+
+.dropdown .content.active {
+    display: block;
+}
+
+
+.title-underline_term{
+    width: 10rem;
+    height: 0.2rem;
+    margin: 0 0px;
+    position: relative;
+    border-radius: 2rem;
+    background-color: var(--mainBlue);
+  }
+
+  .title-underline__term_2 {
+    position: absolute;
+    height: 0.4rem;
+    background: var(--mainOrange);
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+  }
+
+
+  @media screen and (max-width:320px) {
+    .title-underline_term{
+      display: none;
+    }
+    .title-underline__term_2 {
+      display: none;
+    }
+    .trigger {
+      font-size: 0.7rem !important;
+    }
+
+    .dropdown .trigger  {
+      padding: 17px;
+    }
+
+    .content {
+      font-size: 0.8rem;
+    }
+
+  }

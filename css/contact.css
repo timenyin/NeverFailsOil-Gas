@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+:root {
+  --mainDark: #000000;
+  --mainWhite: #FFFFFF;
+  --mainGreen: #369824;
+  --mainOrange: #D43E0D;
+  --mainYellow: #CDC42B;
+  --mainBlue: #2B6396;
+}
+
+.btn-outline-info{
+    outline: var(--mainBlue) !important;
+}
+.btn-outline-info:hover {
+    background-color: var(--mainBlue);
+}
+
+ /*===================Form Group=========================*/
+ #error_message{
+  margin-bottom: 20px;
+  background: var(--mainOrange);
+  padding: 0px;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-size: 13px;
+  color: var(--mainWhite);
+  transition: all 0.5s ease;
+}
