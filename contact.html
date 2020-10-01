@@ -196,33 +196,34 @@
             <h3 class="text-center text-primary">Please fill out this form to contact us</h3>
             <hr class="bg-info">
             <div id="error_message"></div>
-            <form id="myform" onsubmit="return validation();">
+            <form id="myform" onsubmit="return validation();"
+            name="contact" action="POST" data-netlify="true">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input id="name" type="text" class="form-control" placeholder="First Name">
+                  <input id="name" name="name" type="text" class="form-control" placeholder="First Name">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input id="name2" type="text" class="form-control" placeholder="Last Name">
+                  <input id="name2" name="name" type="text" class="form-control" placeholder="Last Name">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input id="email" type="text" class="form-control" placeholder="Email">
+                  <input id="email" name="email"  type="text" class="form-control" placeholder="Email">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input id="phone" type="text" class="form-control" placeholder="Phone Number">
+                  <input id="phone" name="number" type="text" class="form-control" placeholder="Phone Number">
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <textarea id="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                  <textarea id="message" name="message" class="form-control" rows="4" placeholder="Message"></textarea>
                 </div>
               </div>
               <div class="col-md-12">
