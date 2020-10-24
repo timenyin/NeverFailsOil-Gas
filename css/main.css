@@ -157,11 +157,11 @@ body {
 .sidebar-toggle {
   display: none;
   position: fixed;
-  top: 0.6rem;
-  right: 2.3rem;
+  top: 5.6rem;
+  right: 0.7rem;
   font-size: 1.9rem;
   background: transparent;
-  border-color: 1px solid var(--mainYellow);
+  border-color: 1px solid var(--mainOrange);
   border-radius: 5px;
   color: var(--mainWhite);
   transition: var(--transition);
@@ -177,7 +177,7 @@ body {
   -o-transition: var(--transition);
 }
 .sidebar-toggle:hover {
-  color: var(--mainYellow);
+  color: var(--mainOrange);
 }
 
 @keyframes bounce {
@@ -281,8 +281,8 @@ body {
 
   .sidebar-toggle{
     display: block;
-    border: 1px solid  var(--mainYellow);
-    color: var(--mainYellow);
+    border: 1px solid  var(--mainOrange);
+    color: var(--mainOrange);
     z-index: 10;
   }
 
