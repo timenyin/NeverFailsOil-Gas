@@ -10,7 +10,7 @@ cookie_btn.addEventListener('click', ()  => {
 });
 
 setTimeout(() => {
-    if(!localStorage.getItem('cookieBannerDisplayed')) {
+    if(!localStorage.getItem('You Accepted Never Fails Oil and Gas Terms And Condition')) {
 
         cookie_Container.classList.add('active_cookies');
     }
